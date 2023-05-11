@@ -25,7 +25,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: tailplume.io
+      url: https://tailplume.io
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
