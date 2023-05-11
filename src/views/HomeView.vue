@@ -42,13 +42,13 @@ import { RouterLink } from "vue-router";
         </div>
 
         <button
-          class="bg-white/[.16] px-6 py-4 rounded-full hover:bg-white/[0.25] font-medium duration-200 inline-block text-xl disabled:opacity-50 disabled:pointer-events-none relative"
+          class="bg-white/[.16] px-6 py-4 rounded-full hover:bg-white/[0.25] font-medium duration-200 inline-block text-xl disabled:opacity-50 disabled:pointer-events-none"
           disabled
         >
           Claim your tailplume
         </button>
       </form>
-      <p class="mt-2">We are not currently accepting new signups.</p>
+      <p class="mt-2"><i>We are not currently accepting new signups.</i></p>
     </div>
   </section>
 </template>
