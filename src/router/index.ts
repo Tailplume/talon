@@ -7,5 +7,10 @@ const router: RouteRecordRaw[] = [
     name: "home",
     component: HomeView,
   },
+  {
+    path: "/login",
+    name: "login",
+    component: () => import("../views/Login.vue"),
+  },
 ];
 export default router;
