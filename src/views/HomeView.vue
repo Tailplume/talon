@@ -1,11 +1,12 @@
 <script setup lang="ts">
 import { RouterLink } from "vue-router";
+import Container from "../components/Container.vue";
 </script>
 
 <template>
   <section class="min-h-screen bg-slate-900 text-white rainbow-bloom">
-    <nav class="text-white p-7">
-      <div class="container mx-auto flex text-xl px-5 sm:px-20">
+    <Container>
+      <nav class="text-white text-xl flex items-center py-7">
         <RouterLink to="/">
           <img
             src="@/assets/logo-full-inverted.svg"
@@ -17,11 +18,10 @@ import { RouterLink } from "vue-router";
         <div class="ml-auto">
           <RouterLink to="/login">Login</RouterLink>
         </div>
-      </div>
     </nav>
-    <div
-      class="container mx-auto px-5 sm:px-10 md:px-15 xl:px-20 relative py-44"
-    >
+    </Container>
+    <div class="py-44">
+      <Container>
       <img
         src="@/assets/home/be-yourself.svg"
         alt="Be yourself"
@@ -35,7 +35,10 @@ import { RouterLink } from "vue-router";
         <div
           name="link"
           class="px-6 py-4 mr-4 mb-2 bg-white/[.16] rounded-r-2xl border-black/[0.4] border-2 inline-flex items-center text-xl font-light opacity-60"
-          style="border-top-left-radius: 2rem; border-bottom-left-radius: 2rem"
+            style="
+              border-top-left-radius: 2rem;
+              border-bottom-left-radius: 2rem;
+            "
         >
           <span>tailplu.me/</span>
           <input type="text" class="bg-transparent w-44 ml-2" disabled />
@@ -49,6 +52,8 @@ import { RouterLink } from "vue-router";
         </button>
       </form>
       <p class="mt-2"><i>We are not currently accepting new signups.</i></p>
+      </Container>
+    </div>
     </div>
   </section>
 </template>
