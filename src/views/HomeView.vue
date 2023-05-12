@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { RouterLink } from "vue-router";
 import Container from "../components/Container.vue";
+import HomeFeatures from "../components/home/HomeFeatures.vue";
 import HomeIntro from "../components/home/HomeIntro.vue";
 </script>
 
@@ -19,11 +20,11 @@ import HomeIntro from "../components/home/HomeIntro.vue";
         <div class="ml-auto">
           <RouterLink to="/login">Login</RouterLink>
         </div>
-    </nav>
+      </nav>
     </Container>
     <HomeIntro />
-    </div>
-  </section>
+    <HomeFeatures />
+  </div>
 </template>
 
 <style>
