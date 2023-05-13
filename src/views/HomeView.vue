@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import { RouterLink } from "vue-router";
 import Container from "../components/Container.vue";
-import HomeFeatures from "../components/home/HomeFeatures.vue";
 import HomeIntro from "../components/home/HomeIntro.vue";
+import HomeFeatures from "../components/home/HomeFeatures.vue";
+import HomePricing from "../components/home/HomePricing.vue";
 import HomeFooter from "../components/home/HomeFooter.vue";
 </script>
 
@@ -29,6 +30,7 @@ import HomeFooter from "../components/home/HomeFooter.vue";
     </Container>
     <HomeIntro />
     <HomeFeatures />
+    <HomePricing />
     <HomeFooter />
   </div>
 </template>
