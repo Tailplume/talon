@@ -18,6 +18,7 @@ setInterval(() => {
 <template>
   <section class="py-44">
     <Container>
+      <h2 class="mb-8 text-5xl font-bold drop-shadow-lg lg:hidden">Features</h2>
       <div class="flex flex-wrap items-center">
         <div class="w-12/12 lg:w-8/12 2xl:w-6/12">
           <ul>
