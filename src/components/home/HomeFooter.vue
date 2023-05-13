@@ -2,8 +2,8 @@
 import Container from "../Container.vue";
 </script>
 <template>
-  <Container>
-    <div class="py-10">
+  <footer class="py-10">
+    <Container>
       <div class="flex flex-wrap">
         <div v-for="i in 3" :key="i" class="w-full md:w-3/12 lg:w-2/12">
           <ul>
@@ -33,6 +33,6 @@ import Container from "../Container.vue";
           >
         </div>
       </div>
-    </div>
-  </Container>
+    </Container>
+  </footer>
 </template>
