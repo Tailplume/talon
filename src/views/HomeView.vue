@@ -3,6 +3,7 @@ import { RouterLink } from "vue-router";
 import Container from "../components/Container.vue";
 import HomeFeatures from "../components/home/HomeFeatures.vue";
 import HomeIntro from "../components/home/HomeIntro.vue";
+import HomeFooter from "../components/home/HomeFooter.vue";
 </script>
 
 <template>
@@ -28,5 +29,6 @@ import HomeIntro from "../components/home/HomeIntro.vue";
     </Container>
     <HomeIntro />
     <HomeFeatures />
+    <HomeFooter />
   </div>
 </template>
