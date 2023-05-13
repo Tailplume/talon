@@ -7,13 +7,13 @@ import HomeFooter from "../components/home/HomeFooter.vue";
 </script>
 
 <template>
-  <div class="min-h-screen bg-slate-900 text-white relative">
+  <div class="relative min-h-screen bg-slate-900 text-white">
     <img
       src="@/assets/home/rainbow-blom.svg"
-      class="pointer-events-none absolute min-w-full min-h-screen top-0 object-cover"
+      class="pointer-events-none absolute top-0 min-h-screen min-w-full object-cover"
     />
     <Container>
-      <nav class="text-white text-xl flex items-center py-7">
+      <nav class="flex items-center py-7 text-xl text-white">
         <RouterLink to="/">
           <img
             src="@/assets/logo-full-inverted.svg"

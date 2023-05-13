@@ -6,15 +6,15 @@ defineProps<{
 }>();
 </script>
 <template>
-  <li class="cursor-pointer mb-6">
+  <li class="mb-6 cursor-pointer">
     <h2
-      class="text-3xl md:text-6xl font-bold transition duration-500 ease-in-out mb-3"
+      class="mb-3 text-3xl font-bold transition duration-500 ease-in-out md:text-6xl"
       :class="{ 'opacity-40': !isActive }"
     >
       {{ title }}
     </h2>
     <div
-      class="description md:text-xl mb-4"
+      class="description mb-4 md:text-xl"
       :class="{
         active: isActive,
       }"
