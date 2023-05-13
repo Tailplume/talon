@@ -6,7 +6,11 @@ import HomeIntro from "../components/home/HomeIntro.vue";
 </script>
 
 <template>
-  <div class="min-h-screen bg-slate-900 text-white rainbow-bloom">
+  <div class="min-h-screen bg-slate-900 text-white relative">
+    <img
+      src="@/assets/home/rainbow-blom.svg"
+      class="pointer-events-none absolute min-w-full min-h-screen top-0 object-cover"
+    />
     <Container>
       <nav class="text-white text-xl flex items-center py-7">
         <RouterLink to="/">
@@ -26,10 +30,3 @@ import HomeIntro from "../components/home/HomeIntro.vue";
     <HomeFeatures />
   </div>
 </template>
-
-<style>
-.rainbow-bloom {
-  background-image: url("@/assets/home/rainbow-blom.svg");
-  background-size: cover;
-}
-</style>
