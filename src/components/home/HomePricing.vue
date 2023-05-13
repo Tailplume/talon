@@ -10,7 +10,7 @@ import HomePricingTierCard from "./HomePricingTierCard.vue";
     ></div>
     <Container class="relative py-48">
       <h2
-        class="mb-6 text-center text-3xl font-bold opacity-80 drop-shadow-lg md:text-6xl"
+        class="mb-6 text-center text-5xl font-bold drop-shadow-lg md:text-6xl"
       >
         Pricing
       </h2>
