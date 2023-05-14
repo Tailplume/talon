@@ -13,23 +13,25 @@ import HomeFooter from "../components/home/HomeFooter.vue";
       src="@/assets/home/rainbow-blom.svg"
       class="pointer-events-none absolute top-0 min-h-screen min-w-full object-cover"
     />
-    <Container>
-      <nav class="flex items-center py-7 text-xl text-white">
-        <RouterLink to="/">
-          <img
-            src="@/assets/logo-full-inverted.svg"
-            alt="tailplume logo"
-            class="opacity-70"
-            style="height: 3rem"
-          />
-        </RouterLink>
-        <div class="ml-auto">
-          <RouterLink to="/login">Login</RouterLink>
-        </div>
-      </nav>
-    </Container>
-    <HomeIntro />
-    <HomeFeatures />
+    <div class="relative">
+      <Container>
+        <nav class="flex items-center py-7 text-xl text-white">
+          <RouterLink to="/">
+            <img
+              src="@/assets/logo-full-inverted.svg"
+              alt="tailplume logo"
+              class="opacity-70"
+              style="height: 3rem"
+            />
+          </RouterLink>
+          <div class="ml-auto">
+            <RouterLink to="/login">Login</RouterLink>
+          </div>
+        </nav>
+      </Container>
+      <HomeIntro />
+      <HomeFeatures />
+    </div>
     <HomePricing />
     <HomeFooter />
   </div>
