@@ -1,13 +1,25 @@
+<script setup lang="ts">
+defineProps<{
+  tierName: string;
+  features: string[];
+}>();
+</script>
 <template>
   <div class="glassmorphism rounded-lg px-6 py-8 shadow-lg">
-    <h3 class="mb-4 text-center text-3xl font-semibold">Free</h3>
+    <h3 class="mb-4 text-center text-3xl font-semibold">{{ tierName }}</h3>
     <div class="mb-6 flex items-center justify-center">
+      <!-- <span class="text-5xl font-bold">$0</span>
+      <span class="ml-2 text-lg font-light">/ month</span>* -->
       <span class="text-5xl font-bold">$0</span>
-      <span class="ml-2 text-lg font-light">/ month</span>*
+      <span class="text-lg">&nbsp;TBC</span>
     </div>
     <ul class="mb-8">
-      <li v-for="i in 4" :key="i" class="mb-2 text-center text-lg">
-        Feature {{ i }}
+      <li
+        v-for="(feature, index) in features"
+        :key="index"
+        class="mb-2 text-center text-lg"
+      >
+        {{ feature }}
       </li>
     </ul>
     <button
