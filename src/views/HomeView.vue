@@ -5,6 +5,60 @@ import HomeIntro from "../components/home/HomeIntro.vue";
 import HomeFeatures from "../components/home/HomeFeatures.vue";
 import HomePricing from "../components/home/HomePricing.vue";
 import HomeFooter from "../components/home/HomeFooter.vue";
+import { useHead } from "@vueuse/head";
+
+useHead({
+  meta: [
+    { name: "title", content: "Tailplume" },
+    {
+      name: "description",
+      content:
+        "Everything you make, share and sell online, all in one place. The link in bio platform that puts you first.",
+    },
+    {
+      name: "og:type",
+      content: "website",
+    },
+    {
+      name: "og:url",
+      content: "https://tailplume.io",
+    },
+    {
+      name: "og:title",
+      content: "Tailplume",
+    },
+    {
+      name: "og:description",
+      content:
+        "Everything you make, share and sell online, all in one place. The link in bio platform that puts you first.",
+    },
+    {
+      name: "og:image",
+      content: "https://tailplume.io/meta-icon.jpg",
+    },
+    {
+      name: "twitter:card",
+      content: "summary_large_image",
+    },
+    {
+      name: "twitter:url",
+      content: "https://tailplume.io",
+    },
+    {
+      name: "twitter:title",
+      content: "Tailplume",
+    },
+    {
+      name: "twitter:description",
+      content:
+        "Everything you make, share and sell online, all in one place. The link in bio platform that puts you first.",
+    },
+    {
+      name: "twitter:image",
+      content: "https://tailplume.io/meta-icon.jpg",
+    },
+  ],
+});
 </script>
 
 <template>
