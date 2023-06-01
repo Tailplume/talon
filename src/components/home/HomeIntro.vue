@@ -31,6 +31,17 @@ import Container from "../Container.vue";
         </button>
       </form>
       <p class="mt-2"><i>We are not currently accepting new signups.</i></p>
+      <p class="mt-1">
+        <i
+          >However, you can
+          <a
+            href="https://forms.gle/49RXrBSUB2ktJ1QSA"
+            class="underline"
+            target="_blank"
+            >register your interest towards early access here.</a
+          ></i
+        >
+      </p>
     </Container>
   </section>
 </template>
